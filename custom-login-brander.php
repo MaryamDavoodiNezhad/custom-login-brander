@@ -15,4 +15,4 @@ define('CLB_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('CLB_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 require_once CLB_PLUGIN_DIR . 'includes/login-hooks.php';
-require_once CLB_PLUGIN_URL . 'includes/admin-setting.php';
+require_once CLB_PLUGIN_DIR . 'includes/admin-settings.php';
