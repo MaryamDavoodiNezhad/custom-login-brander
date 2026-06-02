@@ -1,0 +1,39 @@
+# OS / system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies (if used later)
+node_modules/
+vendor/
+
+# Build / cache (if used later)
+dist/
+build/
+.cache/
+
+# Env / local config
+.env
+.env.*
+*.local
+
+# Temporary / backups
+*.tmp
+*.bak
+*.swp
+*~
+
+# WordPress common
+wp-config.php
