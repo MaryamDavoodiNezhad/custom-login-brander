@@ -68,8 +68,10 @@ function clb_render_setting_page() {
 	<div class="wrap">
 		<h1><?php echo esc_html__( 'Login Brander Settings', 'custom-login-brander' ); ?></h1>
 
+<!--  Implementing settings in the admin panel -->
 		<form method="post" action="options.php">
 			<?php
+			// Display steps in admin:
 			settings_fields( 'clb_settings_group' );
 			do_settings_sections( 'clb_settings_page' );
 			submit_button( __( 'Save Changes', 'custom-login-brander' ) );

@@ -9,20 +9,22 @@ function clb_apply_login_logo() {
 	if ( empty( $logo_url ) ) {
 		return;
 	}
-	?>
-	<style type="text/css">
-		#login h1 a {
-			background-image: url('<?php echo esc_url( $logo_url ); ?>') !important;
-			background-size: contain !important;
-			background-repeat: no-repeat !important;
-			background-position: center !important;
 
-			/* adjust as needed */
-			width: 100% !important;
-			height: 80px !important;
-		}
-	</style>
-	<?php
+	wp_enqueue_style(
+		'clb-login-style',
+		CLB_PLUGIN_URL . 'assets/css/login.css',
+		array(),
+		'1.0'
+	);
+
+	wp_add_inline_style(
+		'clb-login-style',
+		'#login h1 a{background-image:url("'.esc_url($logo_url). '")!important}'
+	);
+
+	
+	
+	
 }
 
 /**
